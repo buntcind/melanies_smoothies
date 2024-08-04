@@ -65,7 +65,7 @@ if ingredients_list:
         st.subheader(fruite_chosen+ " Nutrition Information")
         fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruite_chosen)
 
-        if fruityvice_response!=200
+        if fruityvice_response!=200:
             fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+search_on)
         
         fv_df = st.dataframe(data=fruityvice_response.json(),use_container_width=True)
