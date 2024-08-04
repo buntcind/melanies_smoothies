@@ -9,6 +9,9 @@ st.write(
     """Chose the fruits you want in your custom Smoothie !
     """
 )
+name_on_order = st.text_input("Name of the smoothie:")
+st.write("The name of the Smoothie will be:", name_on_order)
+
 
 cnx=st.connection("snowflake");
 session=cnx.session();
